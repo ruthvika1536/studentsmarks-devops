@@ -12,6 +12,7 @@ import java.util.List;
 public class StudentMarkServiceController {
     @Autowired
     private  StudentMarkService studentMarkService;
+    private Student student;
 
     @PostMapping("addOne")
     public ResponseEntity<Student> addOneStudent(@RequestBody Student student) {
